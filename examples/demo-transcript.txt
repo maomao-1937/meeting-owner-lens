@@ -1,0 +1,4 @@
+00:00 Alice: I will send the Q3 deck to the board tomorrow.
+00:09 Bob: Let us review the metrics next week.
+00:18 Alice: I'll update the rollout checklist tonight.
+00:23 Bob: Carol might prepare the budget, but she was not in this meeting.

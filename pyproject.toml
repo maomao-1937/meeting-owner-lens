@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling>=1.25,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "meeting-owner-lens"
+version = "0.1.0"
+description = "Local post-hoc review of draft meeting action owners against a roster and transcript"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["sentence-transformers>=5,<6", "socksio>=1,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+meeting-owner-lens = "meeting_owner_lens.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/meeting_owner_lens"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
